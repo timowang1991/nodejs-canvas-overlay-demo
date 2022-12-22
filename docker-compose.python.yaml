@@ -1,0 +1,24 @@
+services:
+  python-canvas-overlay-demo:
+    image: python:3.9-alpine
+    volumes:
+      - .:/app
+    working_dir: /app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        apk add --update \
+          make \
+          g++ \
+          jpeg-dev \
+          cairo-dev \
+          giflib-dev \
+          pango-dev \
+          libtool \
+          autoconf \
+          automake
+        pip install pipenv
+        pipenv install --system --deploy --ignore-pipfile
+        python main.py
+

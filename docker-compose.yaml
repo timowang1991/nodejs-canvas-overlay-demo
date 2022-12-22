@@ -1,0 +1,23 @@
+services:
+  nodejs-canvas-overlay-demo:
+    image: nikolaik/python-nodejs:python3.10-nodejs16-alpine
+    volumes:
+      - .:/app
+    working_dir: /app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        apk add --update \
+          make \
+          g++ \
+          jpeg-dev \
+          cairo-dev \
+          giflib-dev \
+          pango-dev \
+          libtool \
+          autoconf \
+          automake
+        npm i
+        node main
+

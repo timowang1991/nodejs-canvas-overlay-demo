@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-canvas-overlay-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timowang1991/nodejs-canvas-overlay-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timowang1991/nodejs-canvas-overlay-demo/issues"
+  },
+  "homepage": "https://github.com/timowang1991/nodejs-canvas-overlay-demo#readme",
+  "dependencies": {
+    "canvas": "^2.9.3"
+  }
+}
